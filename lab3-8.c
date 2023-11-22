@@ -2,7 +2,7 @@
 
 int main()
 {
-    int i, f = 1, num;
+    int i, f = 1, num; 
     float e = 1.0;
 
     printf("Input the number : ");
