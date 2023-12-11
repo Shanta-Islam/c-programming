@@ -176,25 +176,25 @@
 //}
 
 
-//problem6
+problem6
 
-// #include<stdio.h>
-// #include<math.h>
+#include<stdio.h>
+#include<math.h>
 
-// int main(){
+int main(){
 
-//     int i,n,x,sum=0;
-//     scanf("%d",&x);
+    float i,n,x,sum=0;
+    scanf("%d",&n);
 
-//    for(i=0;i<n;i++){
+   for(i=0;i<n;i++){
     
-//     printf("%d",pow(x,(i*2+1)));
-//     sum=sum+pow(x,(i*2+1));
-//    }
-//     //sum=sum+pow(x,i*2+1);
-//     printf("%d",sum);
+    printf("%d",pow(x,(i*2+1)));
+    sum=sum+pow(x,(i*2+1));
+   }
+    //sum=sum+pow(x,i*2+1);
+    printf("%d",sum);
 
-//     return 0;
-// }
+    return 0;
+}
 
 

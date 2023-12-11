@@ -1,4 +1,4 @@
-//lab5(1)
+//...lab5(1)
 
 // //#include <stdio.h>
 
@@ -72,7 +72,7 @@
 // }
 
 
-//lab5(2) correct code
+//...lab5(2) correct code
 // #include <stdio.h>
 // #include<time.h>
 // #include<stdlib.h>
@@ -125,7 +125,7 @@
 // }
 
 
-// lab5(3)
+// ...lab5(3)
 // #include<stdio.h>
 
 // int main(){
@@ -160,34 +160,253 @@
 
 
 
+//....lab5(5)  
+//3 ta num array te nibo randomly.
+//and then check kore dekhbo je ei number ta 
+//array te exist kore kina ,jodi exist kore taile found asbe ,
+//na thakle not found asbe.
+
+// #include<stdio.h>
+// int main(){
+
+// int size,key,index=-1,j,i;
+
+// printf("Enter array size:\n");
+// scanf("%d",&size);
+
+// int arr[size];
+
+// for(j=0;j<size;j++){
+//     scanf("%d",&arr[j]);
+// }
+
+// printf("Enter the key");
+// scanf("%d",&key);
+// for(i=0;i<size;i++){
+//     if(arr[i]==key){
+//         index=i;
+//     }
+// }
+// if (index==-1){
+//     printf("NOT FOUND");
+// }
+
+// else printf("FOUND");
+
+
+//     return 0;
+// }
+
+
+//...lab5(6)
+
+// #include<stdio.h>
+//  int main(){
+
+//  int arr[]={1,3,2,1,2,3,5,5,3};
+
+//  int size = sizeof(arr)/sizeof(arr[0]);
+
+// for (int i=0;i< size;i++){
+//     int count=0;
+//     for(int k=0;k<size;k++){
+//         if(arr[i]==arr[k])
+//         count++;
+//     }
+//     if(count%2!=0){
+//         printf("%d %d",arr[i],count);
+//         break;
+//     }
+// }
+
+//     return 0;
+//  }
+
+
+//...lab5(6) jodi user input nia korte bole taile emn hobe..
+// #include<stdio.h>
+// #include<stdlib.h>
+
+// int main(){
+
+// int n, count=0;
+
+// printf("enter array size:");
+// scanf("%d",&n);
+
+// int arr[n];
+
+// printf("enter array: ");
+
+// for(int j=0;j<n;j++){
+//     scanf("%d", &arr[j]);
+// }
+
+//  int size = sizeof(arr)/sizeof(arr[0]);
+
+
+//  for (int i=0;i< size;i++){
+//     int count=0;
+//     for(int k=0;k<size;k++){
+//          if(arr[i]==arr[k])
+//          count++;
+//      }
+//      if(count%2!=0){
+//          printf("%d %d",arr[i],count);
+//          break;
+//      }
+//  }
+//     return 0;
+// }
+
+
+//...lab5(7)
+
+// #include<stdio.h>
+// #include<stdlib.h>
+
+// int main (){
+
+//  int arr[]={11 ,13 ,15 ,17, 19 ,21};
+//  int arr2[]={10 ,12, 14, 16 ,18 ,20 ,22};
+
+//  int size=sizeof(arr)/sizeof(arr[0]);
+//  int size2=sizeof(arr2)/sizeof(arr2[0]);
+
+//  int result[size+size2];
+
+//  int i=0,j=0,k=0;
+
+// while(i<size && j<size2){
+//     if(arr[i]<arr2[j]){
+//         result[k++]=arr[i++];
+//     }
+//     else result[k++]=arr2[j++];
+// }
+
+// while(i<size){
+//     result[k++]=arr[i++];
+// }
+
+// while(j<size2){
+//     result[k++]=arr2[j++];
+// }
+
+// int l=0;
+// while(l<size+size2){
+//     printf("%d ",result[l++]);
+// }
+
+//     return 0;
+// }
+
+
+//...lab5(8)
+// #include <stdio.h>
+// int main(){
+    
+//     int size;
+//     printf("Input the size of array\n");
+//     scanf("%d", &size);
+//     int arr[size+1];
+//     printf("Input elements in the array in ascending order:\n");
+//     for(int k=0; k<size ; k++){
+//         scanf("%d", &arr[k]);
+//     }
+//     int key;
+//     printf("Input the value to be inserted :\n");
+//     scanf("%d", &key);
+
+//     int index;
+    
+//     for(int i=0 ; i<size-1; i++){
+//         if(arr[i]<key && arr[i+1]>key){
+//             index=i+1;
+//             break;
+//         }
+//     }
+    
+//     for(int l= size; l>index-1;l--){
+//         arr[l]=arr[l-1];
+//     }
+    
+//     arr[index]=key;
+    
+//     printf("Array after operattion: \n");
+//     for(int p=0; p<size+1; p++){
+//         printf("%d ", arr[p]);
+//     }
+    
+//     return 0;
+// }
+
+
 //lab5(4)
+// #include <stdio.h>
+
+// int main()
+// {
+    
+//     int num[20] , counter=0, flag=0;
+    
+//     for(int i=0; i<5; i++){
+//         scanf("%d", &num[i]);
+        
+//         for(int j = 0; j<=i ; j++){
+//             if(num[i]==num[j]){
+//                 counter++;
+//             }
+          
+//         }
+//           if(counter>1){
+//               flag++;
+//                 printf("present\n");
+//             }
+//             counter=0;
+//     }
+     
+//     if(flag==0){
+//         printf("Worst Case");
+//     }
+//     return 0;
+// }
+
+lab5(6)
 #include<stdio.h>
-int main(){
+int main (){
 
-int size,key,index=-1,j,i;
+int arr[]={10,12,14,16,18,20,22};
+int arr2[]={11,13,15,17,19,21};
+int size= sizeof (arr)/sizeof (arr[0]);
+int size2= sizeof(arr2)/sizeof(arr2[0]);
+int i,j,k,n3;
+n3= size+size2;
+int arr3[n3];
 
-printf("Enter array size:\n");
-scanf("%d",&size);
 
-int arr[size];
-
-for(j=0;j<size;j++){
-    scanf("%d",&arr[j]);
-}
-
-printf("Enter the key");
-scanf("%d",&key);
 for(i=0;i<size;i++){
-    if(arr[i]==key){
-        index=i;
+  arr3[i]=arr[i];}
+for(j=0;j<size2;j++) {
+  arr3[j+size]=arr2[j];}
+
+  printf("the merged array:");
+  for(i=0;i<n3;i++){
+    printf("%d ",arr3[i]);
+  }
+  printf("final array after sorting:");
+  for(i=0;i<n3;i++){
+    int temp;
+    for(j=i+1;j<n3;j++){
+      if(arr3[i]>arr3[j]){
+        temp=arr3[i];
+        arr3[i]=arr3[j];
+        arr3[j]=temp;
+      }
     }
-}
-if (index==-1){
-    printf("NOT FOUND");
-}
+  }
+  printf("print the sorted array");
+  for(i=0;i<n3;i++){
+    printf("%d ",arr3[i]);
+  }
+  return 0;}
 
-else printf("FOUND");
-
-
-    return 0;
-}
