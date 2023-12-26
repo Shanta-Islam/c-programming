@@ -605,23 +605,45 @@
 //   return 0;
 // }
 
-#include <stdio.h>
-#include <math.h>
+// #include <stdio.h>
+// #include <math.h>
 
-int main (){
+// int main (){
 
-int reminder, n,result=0,sum;
-scanf("%d",&n);
+// int reminder, n,result=0,sum;
+// scanf("%d",&n);
 
- while(n>0){
+//  while(n>0){
        
-     reminder=n%10;
-     result=result*10+reminder;
-     sum=n/10;
+//      reminder=n%10;
+//      result=result*10+reminder;
+//      sum=n/10;
       
    
-   if(result==n)
-   printf("palindrome");
-  else printf("not palindrome");}
-   return 0;
+//    if(result==n)
+//    printf("palindrome");
+//   else printf("not palindrome");}
+//    return 0;
+// }
+
+#include<stdio.h>
+ int main(){
+
+ int arr[]={1,3,2,1,2,3,5,5,3};
+
+ int size = sizeof(arr)/sizeof(arr[0]);
+
+for (int i=0;i< size;i++){
+    int count=0;
+    for(int k=0;k<size;k++){
+        if(arr[i]==arr[k])
+        count++;
+    }
+    if(count%2!=0){
+        printf("%d %d",arr[i],count);
+        break;
+    }
 }
+
+    return 0;
+ }

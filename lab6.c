@@ -78,4 +78,81 @@
 // }
 
 //problem4
+// #include <stdio.h>
+// int integerPower(int base, int exponent){
+//     int result=1;
+//     for(int i=0;i<exponent;i++){
+//         result=result*base;
+//     }
+//     return result;
+// }
+// int main(){
+//     int ans;
+//     ans=integerPower(3,3);
+//     printf("ans=%d",ans);
+//     return 0;
+// }
+
+
+ //problem 5
+//   #include <stdio.h>
+//   int gcd(int a,int b){
+//     int hcf;
+//     for(int i=1;i<=a && i<=b;i++){
+//         if(a%i==0 && b%i==0){
+//             hcf=i;
+//         }
+//     }
+//     return hcf;
+//   }
+//   int main(){
+//     int num1,num2;
+//     printf("Enter two numbers : ");
+//     scanf("%d %d",&num1, &num2);
+
+//     int result = gcd(num1, num2);
+//     printf("The GCD of %d and %d = %d", num1, num2, result);
+
+//      return 0;
+//   }
+
+//problem 6
+// #include <stdio.h>
+// //////fac=n+fac(n-1)
+// int fac(int n){
+//     if(n==0 || n==1)
+//         return 1;
+//     else 
+//     return n+fac(n-1);
+// }
+// int main(){
+//     int result,num;
+//     scanf("%d",&num);
+//     result=fac(num);
+//     printf("result=%d",result);
+//     return 0;
+// }
+
+//problem 7
 #include <stdio.h>
+int print_HW(int n){
+
+    if(n==0){
+        return 0;
+    }
+    else{
+        printf("Hello world when n=%d\n",n);
+        print_HW(n-1);
+        printf("return when n=%d\n",n);
+    }
+}
+
+int main(){
+    int n,ans;
+    scanf("%d",&n);
+    printf("First call---->\n");
+    print_HW(n);
+    printf("Finish------!!!");
+
+    return 0;
+}

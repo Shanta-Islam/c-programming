@@ -371,7 +371,7 @@
 //     return 0;
 // }
 
-lab5(6)
+lab5(7)
 #include<stdio.h>
 int main (){
 
@@ -410,3 +410,33 @@ for(j=0;j<size2;j++) {
   }
   return 0;}
 
+
+lab5(8)
+#include<stdio.h>
+int main (){
+  int n,i,j,temp;
+  scanf("%d",n);
+  int arr[n+1];
+
+  for(i=0;i<n;i++){
+    scanf("%d",&arr[i]);
+  }
+int key;
+printf("Input the value to be inserted :\n");
+scanf("%d",&key);
+arr[n]=key;
+
+for(i=0;i<ni++){
+  for(j=0;j<n;j++){
+    if(arr[j+1]<arr[j]){
+      temp=arr[j];
+      arr[j]=arr[j+1];
+      arr[j+1]=temp;
+    }
+  }
+}
+for(i=0;i<n3;i++){
+  printf("%d",arr[i]);
+}
+return 0;
+}
